@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap');
+
+:root {
+    --button-bg-color: #23375D;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+    font-family: 'Montseratt', sans-serif;
+    background-color: rgb(240, 245, 247);
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.table {
+    width: 800px;
+    margin-bottom: 50px;
+}
+
+.table th, .table td{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #125690;
+    color: white;
+}
+
+.form-container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: #fff;
+    display: none;
+    opacity: 0;
+}
+
+#book-form {
+    position: relative;
+    border: 1px solid rgb(179, 176, 176);
+    margin: 50px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 3px;
+    box-shadow: 0px 1px 9px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 1px 9px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 9px 1px rgba(0,0,0,0.75);
+}
+
+#book-form input {
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    font-size: 18px;
+    background-color: rgb(235, 229, 229);
+}
+
+#book-form #submit-btn {
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    outline: none;
+    background-color: var(--button-bg-color);
+    font-size: 16px;
+    color: #fff;
+}
+
+button:active {
+    outline: none;
+}
+
+#add-btn {
+    cursor: pointer;
+    margin-bottom: 50px;
+    width: 200px;
+    height: 40px;
+    outline: none;
+    background-color: var(--button-bg-color);
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+#close {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 16px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: rgb(248, 20, 20);
+}
+
+#add-btn:hover {
+    background-color: #125690;;
+}
+
+.form-container.show {
+    opacity: 1;
+    display: block;
+}
+
+.delete-book {
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    color: #fff;
+    margin-top: 8px;
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.mark-read-btn {
+    cursor: pointer;
+    margin-right: 10px;
+    background-color: var(--button-bg-color);
+    color: #fff;
+    padding: 5px;
+    outline: 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.mark-read-btn:hover {
+    background-color: #125690;
+}
+
+.mark-read-btn:active {
+    transform: scale(0.9);
+}
+
+.mark-read-btn.have-read {
+    cursor: pointer;
+    margin-right: 10px;
+    background-color: #FFA10D;
+    color: #fff;
+    padding: 5px;
+    outline: 0;
+    border: none;
+    border-radius: 5px;
+}

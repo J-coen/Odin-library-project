@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Odin book</title>
+</head>
+<body>
+
+<div class="container">
+    <button id="add-btn">ADD A NEW BOOK</button>
+    <!--form-->
+    <div class="form-container">
+        <form id="book-form">
+            <button id="close">X</button>
+            <div>
+              <label for="book-title">Book Title</label>
+              <input type="text" id="book-title">
+            </div>
+            <div>
+            <label for="book-author">Book Author</label>
+              <input type="text" id="book-author">
+            </div>
+           <div>
+          <label for="pages">Pages</label>
+              <input type="text" id="pages">
+            </div>
+         <div>
+       <label for="read">Read? (Write "true" if read)</label>
+              <input type="text" id="read">
+            </div>
+           <input type="submit" id="submit-btn" value="Submit"></input>
+          </form>
+    </div>
+
+
+    <!--Book display-->
+    <div class="book-info-container">
+        <table class="table" id="table">
+          <thead>
+            <tr id="tHead">
+              <th>Book Title</th>
+              <th>Book Author</th>
+              <th>Pages</th>
+              <th>Read?</th>
+            </tr>
+        </thead>
+          <tbody id="table-body"></tbody>
+        </table>
+        
+     </div>
+
+</div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
